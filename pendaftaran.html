@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulir Pendaftaran SMK Bina Karya Nusantara — Mode simulasi.">
+  <title>Formulir Pendaftaran | SMK Bina Karya Nusantara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <svg style="display:none;" aria-hidden="true">
+    <defs>
+      <symbol id="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+      <symbol id="icon-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" id="navbar" role="navigation" aria-label="Navigasi utama">
+        <div class="navbar__brand">
+          <span class="logo-bkn">BKN</span>
+          <span class="logo-text">SMK Bina Karya Nusantara</span>
+        </div>
+
+        <button type="button" class="navbar__toggle" id="navbarToggle" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="navbar-menu">
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+
+        <ul class="navbar__menu" id="navbar-menu" role="menubar">
+          <li role="none"><a href="index.html#beranda" class="nav-link" data-nav="beranda" role="menuitem">Beranda</a></li>
+          <li role="none"><a href="index.html#profil" class="nav-link" data-nav="profil" role="menuitem">Profil</a></li>
+          <li role="none"><a href="index.html#statistik" class="nav-link" data-nav="statistik" role="menuitem">Statistik</a></li>
+          <li role="none"><a href="index.html#keahlian" class="nav-link" data-nav="keahlian" role="menuitem">Keahlian</a></li>
+          <li role="none"><a href="index.html#fasilitas" class="nav-link" data-nav="fasilitas" role="menuitem">Fasilitas</a></li>
+          <li role="none"><a href="index.html#prestasi" class="nav-link" data-nav="prestasi" role="menuitem">Prestasi</a></li>
+          <li role="none"><a href="index.html#kegiatan" class="nav-link" data-nav="kegiatan" role="menuitem">Kegiatan</a></li>
+          <li role="none"><a href="index.html#faq" class="nav-link" data-nav="faq" role="menuitem">FAQ</a></li>
+          <li role="none" class="navbar__cta-wrapper">
+            <a href="pendaftaran.html" class="btn btn--gold navbar__cta" role="menuitem">
+              <svg class="icon icon--sm" aria-hidden="true"><use href="#icon-user"></use></svg>
+              Pendaftaran
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="form-hero">
+      <div class="container">
+        <div class="form-hero__content">
+          <h1 class="form-hero__title">Formulir Pendaftaran</h1>
+          <p class="form-hero__desc">Lengkapi data berikut dengan benar. Data ini hanya untuk simulasi dan tidak akan disimpan.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <div class="container">
+        <form id="registrationForm" class="form-card" novalidate>
+          <fieldset class="form-group">
+            <legend class="form-group__title">Data Identitas Calon Siswa</legend>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="nama" class="form-label">Nama Lengkap <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="nama" name="nama" class="form-input" required placeholder="Masukkan nama lengkap" autocomplete="name">
+              </div>
+              <div class="form-field">
+                <label for="nisn" class="form-label">NISN <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="nisn" name="nisn" class="form-input" required placeholder="Nomor Induk Siswa Nasional" autocomplete="off" inputmode="numeric" pattern="[0-9]{10}" title="NISN harus 10 digit angka">
+              </div>
+              <div class="form-field">
+                <label for="tempat-lahir" class="form-label">Tempat Lahir <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="tempat-lahir" name="tempat_lahir" class="form-input" required placeholder="Contoh: Jakarta">
+              </div>
+              <div class="form-field">
+                <label for="tanggal-lahir" class="form-label">Tanggal Lahir <span class="required" aria-hidden="true">*</span></label>
+                <input type="date" id="tanggal-lahir" name="tanggal_lahir" class="form-input" required max="2010-01-01">
+              </div>
+              <div class="form-field">
+                <label for="jenis-kelamin" class="form-label">Jenis Kelamin <span class="required" aria-hidden="true">*</span></label>
+                <select id="jenis-kelamin" name="jenis_kelamin" class="form-select" required>
+                  <option value="">Pilih Jenis Kelamin</option>
+                  <option value="Laki-laki">Laki-laki</option>
+                  <option value="Perempuan">Perempuan</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="asal-sekolah" class="form-label">Asal Sekolah <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="asal-sekolah" name="asal_sekolah" class="form-input" required placeholder="Nama SD/SMP sebelumnya">
+              </div>
+              <div class="form-field">
+                <label for="no-hp" class="form-label">No. HP / WhatsApp <span class="required" aria-hidden="true">*</span></label>
+                <input type="tel" id="no-hp" name="no_hp" class="form-input" required placeholder="08xxxxxxxxxx" autocomplete="tel" inputmode="tel" pattern="[0-9]{10,13}" title="Nomor HP minimal 10 digit">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <legend class="form-group__title">Data Orang Tua / Wali</legend>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="nama-ayah" class="form-label">Nama Ayah <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="nama-ayah" name="nama_ayah" class="form-input" required placeholder="Nama lengkap ayah">
+              </div>
+              <div class="form-field">
+                <label for="nama-ibu" class="form-label">Nama Ibu <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="nama-ibu" name="nama_ibu" class="form-input" required placeholder="Nama lengkap ibu">
+              </div>
+              <div class="form-field form-field--full">
+                <label for="alamat" class="form-label">Alamat Lengkap <span class="required" aria-hidden="true">*</span></label>
+                <textarea id="alamat" name="alamat" class="form-textarea" rows="3" required placeholder="Jalan, RT/RW, Kelurahan, Kecamatan, Kota, Kode Pos"></textarea>
+              </div>
+              <div class="form-field">
+                <label for="no-hp-ortu" class="form-label">No. HP Orang Tua <span class="required" aria-hidden="true">*</span></label>
+                <input type="tel" id="no-hp-ortu" name="no_hp_ortu" class="form-input" required placeholder="08xxxxxxxxxx" autocomplete="tel" inputmode="tel" pattern="[0-9]{10,13}" title="Nomor HP minimal 10 digit">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <legend class="form-group__title">Pilihan Jurusan</legend>
+            <div class="form-grid">
+              <div class="form-field form-field--full">
+                <label for="jurusan" class="form-label">Program Keahlian <span class="required" aria-hidden="true">*</span></label>
+                <select id="jurusan" name="jurusan" class="form-select" required>
+                  <option value="">Pilih Program Keahlian</option>
+                  <option value="TKR">Teknik Kendaraan Ringan (TKR)</option>
+                  <option value="DKV">Desain Komunikasi Visual (DKV)</option>
+                  <option value="TSM">Teknik Sepeda Motor (TSM)</option>
+                  <option value="Kuliner">Kuliner</option>
+                  <option value="Perbankan">Perbankan Syariah</option>
+                  <option value="Busana">Tata Busana</option>
+                  <option value="Farmasi">Farmasi</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn--gold btn--lg btn--full">Kirim Pendaftaran</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col footer__brand-col">
+          <div class="footer__logo">
+            <span class="logo-bkn">BKN</span>
+            <span class="logo-text">SMK Bina Karya Nusantara</span>
+          </div>
+          <p class="footer__desc">Membekali siswa dengan pengetahuan dan keterampilan yang dapat diterapkan dalam dunia kerja, pendidikan lanjutan, dan kehidupan sehari-hari.</p>
+        </div>
+
+        <div class="footer__col footer__links-col">
+          <h3 class="footer__col-title">Tautan Cepat</h3>
+          <ul class="footer__nav-list">
+            <li><a href="index.html#beranda" class="footer__nav-link">Beranda</a></li>
+            <li><a href="index.html#profil" class="footer__nav-link">Profil</a></li>
+            <li><a href="index.html#statistik" class="footer__nav-link">Statistik</a></li>
+            <li><a href="index.html#keahlian" class="footer__nav-link">Keahlian</a></li>
+            <li><a href="index.html#fasilitas" class="footer__nav-link">Fasilitas</a></li>
+            <li><a href="index.html#prestasi" class="footer__nav-link">Prestasi</a></li>
+            <li><a href="index.html#kegiatan" class="footer__nav-link">Kegiatan</a></li>
+            <li><a href="index.html#faq" class="footer__nav-link">FAQ</a></li>
+            <li><a href="pendaftaran.html" class="footer__nav-link">Pendaftaran</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col footer__contact-col">
+          <h3 class="footer__col-title">Hubungi Kami</h3>
+          <p class="footer__contact-text">Jl. Merdeka No. 123, Jakarta 10110</p>
+          <p class="footer__contact-text">info@smkbinakarya.sch.id</p>
+          <p class="footer__contact-text">(021) 1234-5678</p>
+          <div class="footer__divider"></div>
+          <p class="footer__contact-text footer__gold-text">Jam Operasional: Senin - Jumat, 07.00 - 16.00 WIB</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 SMK Bina Karya Nusantara</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link">Instagram</a>
+          <span class="footer__social-sep">•</span>
+          <a href="#" class="footer__social-link">YouTube</a>
+          <span class="footer__social-sep">•</span>
+          <a href="#" class="footer__social-link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Success Modal -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal">
+      <div class="modal__header">
+        <div class="modal__icon">
+          <svg class="icon icon--lg" aria-hidden="true"><use href="#icon-check"></use></svg>
+        </div>
+        <h2 id="modalTitle" class="modal__title">Pendaftaran Berhasil</h2>
+      </div>
+      <p class="modal__desc">Terima kasih telah mendaftar. Data Anda telah kami terima dalam mode simulasi.</p>
+      
+      <div class="modal__summary" id="modalSummary">
+        <h3 class="modal__summary-title">Ringkasan Data</h3>
+        <dl class="modal__summary-list">
+          <div class="modal__summary-row">
+            <dt>Nama Lengkap</dt>
+            <dd id="summaryNama">-</dd>
+          </div>
+          <div class="modal__summary-row">
+            <dt>Program Keahlian</dt>
+            <dd id="summaryJurusan">-</dd>
+          </div>
+          <div class="modal__summary-row">
+            <dt>No. HP</dt>
+            <dd id="summaryNoHp">-</dd>
+          </div>
+        </dl>
+      </div>
+
+      <p class="modal__countdown">
+        Halaman akan dialihkan ke Beranda dalam <strong id="countdownNumber">3</strong> detik...
+      </p>
+
+      <div class="modal__actions">
+        <button type="button" class="btn btn--gold btn--lg" id="redirectBtn">Kembali Sekarang</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

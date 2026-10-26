@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SMK Bina Karya Nusantara — Pendidikan vokasi unggul dengan 7 program keahlian.">
+  <title>SMK Bina Karya Nusantara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <svg style="display:none;" aria-hidden="true">
+    <defs>
+      <symbol id="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+      <symbol id="icon-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" id="navbar" role="navigation" aria-label="Navigasi utama">
+        <div class="navbar__brand">
+          <span class="logo-bkn">BKN</span>
+          <span class="logo-text">SMK Bina Karya Nusantara</span>
+        </div>
+
+        <button type="button" class="navbar__toggle" id="navbarToggle" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="navbar-menu">
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+
+        <ul class="navbar__menu" id="navbar-menu" role="menubar">
+          <li role="none"><a href="#beranda" class="nav-link active" data-nav="beranda" role="menuitem">Beranda</a></li>
+          <li role="none"><a href="#profil" class="nav-link" data-nav="profil" role="menuitem">Profil</a></li>
+          <li role="none"><a href="#statistik" class="nav-link" data-nav="statistik" role="menuitem">Statistik</a></li>
+          <li role="none"><a href="#keahlian" class="nav-link" data-nav="keahlian" role="menuitem">Keahlian</a></li>
+          <li role="none"><a href="#fasilitas" class="nav-link" data-nav="fasilitas" role="menuitem">Fasilitas</a></li>
+          <li role="none"><a href="#prestasi" class="nav-link" data-nav="prestasi" role="menuitem">Prestasi</a></li>
+          <li role="none"><a href="#kegiatan" class="nav-link" data-nav="kegiatan" role="menuitem">Kegiatan</a></li>
+          <li role="none"><a href="#faq" class="nav-link" data-nav="faq" role="menuitem">FAQ</a></li>
+          <li role="none" class="navbar__cta-wrapper">
+            <a href="pendaftaran.html" class="btn btn--gold navbar__cta" role="menuitem">
+              <svg class="icon icon--sm" aria-hidden="true"><use href="#icon-user"></use></svg>
+              Pendaftaran
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="beranda" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <img src="hero.jpg" alt="" loading="eager" onerror="this.style.display='none'">
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="container">
+        <div class="hero__content">
+          <h1 id="hero-title" class="hero__title">SMK Bina Karya Nusantara</h1>
+          <p class="hero__subtitle">Keterampilan untuk Masa Depan</p>
+          <p class="hero__desc">Membekali siswa dengan pengetahuan dan keterampilan yang dapat diterapkan dalam dunia kerja, pendidikan lanjutan, dan kehidupan sehari-hari.</p>
+          <div class="hero__actions">
+            <a href="pendaftaran.html" class="btn btn--gold btn--lg">Daftar Sekarang</a>
+            <a href="#keahlian" class="btn btn--outline-white btn--lg">Lihat Program Keahlian</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="stats" id="statistik" aria-labelledby="stats-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="stats-title" class="section__title">BKN dalam Angka</h2>
+        </header>
+        <div class="stats__grid">
+          <div class="stat-card">
+            <div class="stat-card__num" data-target="7">0</div>
+            <p class="stat-card__label">Program Keahlian</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__num" data-target="450">0</div>
+            <p class="stat-card__label">Lulusan</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__num" data-target="6">0</div>
+            <p class="stat-card__label">Fasilitas Utama</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__num" data-target="18">0</div>
+            <p class="stat-card__label">Rombongan Belajar</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="profil" id="profil" aria-labelledby="profil-title">
+      <div class="container">
+        <div class="profil__grid">
+          <div class="profil__image">
+            <img src="bengkel-tkr.png" alt="Bengkel TKR SMK Bina Karya Nusantara" loading="lazy" onerror="this.style.display='none'">
+          </div>
+          <div class="profil__content">
+            <header class="section-header">
+              <h2 id="profil-title" class="section__title">Tentang Bina Karya Nusantara</h2>
+            </header>
+            <p class="profil__desc">SMK Bina Karya Nusantara didirikan dengan visi menjadi lembaga pendidikan vokasi unggul yang menghasilkan lulusan berkarakter, kompeten, dan siap bersaing di era global. Kami berkomitmen menyelenggarakan pendidikan berkualitas dengan kurikulum yang relevan dengan kebutuhan industri.</p>
+            <p class="profil__desc">Didukung oleh fasilitas modern, guru berpengalaman, dan kerjasama dengan industri mitra, kami menyiapkan siswa tidak hanya menguasai teori tetapi juga mahir dalam praktik kerja nyata. Setiap program keahlian dirancang untuk membangun keterampilan teknis dan soft skill yang dibutuhkan dunia kerja.</p>
+            <a href="#keahlian" class="btn btn--gold btn--lg">Lihat Program Keahlian</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="keahlian" id="keahlian" aria-labelledby="keahlian-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="keahlian-title" class="section__title">Program Keahlian</h2>
+          <p class="section__subtitle">7 Program keahlian unggulan untuk menyiapkan masa depan Anda</p>
+        </header>
+        <div class="keahlian__grid">
+          <article class="keahlian-card">
+            <div class="keahlian-card__image">
+              <img src="bengkel-tkr.png" alt="Teknik Kendaraan Ringan" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="keahlian-card__content">
+              <span class="keahlian-card__num">01</span>
+              <h3 class="keahlian-card__title">Teknik Kendaraan Ringan (TKR)</h3>
+              <p class="keahlian-card__desc">Mempelajari perawatan, perbaikan, dan diagnostik sistem kendaraan ringan modern termasuk mesin, transmisi, suspensi, dan sistem elektronik.</p>
+            </div>
+          </article>
+
+          <article class="keahlian-card">
+            <div class="keahlian-card__image">
+              <img src="dkv.jpg" alt="Desain Komunikasi Visual" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="keahlian-card__content">
+              <span class="keahlian-card__num">02</span>
+              <h3 class="keahlian-card__title">Desain Komunikasi Visual (DKV)</h3>
+              <p class="keahlian-card__desc">Menguasai desain grafis, ilustrasi digital, branding, UI/UX, dan produksi media cetak serta digital menggunakan software standar industri.</p>
+            </div>
+          </article>
+
+          <article class="keahlian-card">
+            <div class="keahlian-card__image">
+              <img src="Hands-On Motorcycle Training Workshop.png" alt="Teknik Sepeda Motor" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="keahlian-card__content">
+              <span class="keahlian-card__num">03</span>
+              <h3 class="keahlian-card__title">Teknik Sepeda Motor (TSM)</h3>
+              <p class="keahlian-card__desc">Fokus pada perawatan mesin, sistem kelistrikan, injeksi, dan tuning performa sepeda motor matic dan bebek.</p>
+            </div>
+          </article>
+
+          <article class="keahlian-card">
+            <div class="keahlian-card__image">
+              <img src="Collaborative Graphic Design Classroom.png" alt="Kuliner" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="keahlian-card__content">
+              <span class="keahlian-card__num">04</span>
+              <h3 class="keahlian-card__title">Kuliner</h3>
+              <p class="keahlian-card__desc">Teknik memasak, pâtisserie, manajemen F&B, kebersihan makanan, dan kewirausahaan kuliner untuk industri hotel dan restoran.</p>
+            </div>
+          </article>
+
+          <article class="keahlian-card">
+            <div class="keahlian-card__image">
+              <img src="kelas-dkv.png" alt="Perbankan Syariah" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="keahlian-card__content">
+              <span class="keahlian-card__num">05</span>
+              <h3 class="keahlian-card__title">Perbankan Syariah</h3>
+              <p class="keahlian-card__desc">Mempelajari prinsip syariah, produk perbankan, akuntansi keuangan, dan layanan nasabah sesuai standar OJK dan DSN-MUI.</p>
+            </div>
+          </article>
+
+          <article class="keahlian-card">
+            <div class="keahlian-card__image">
+              <img src="Fashion Design Classroom Workshop.png" alt="Busana" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="keahlian-card__content">
+              <span class="keahlian-card__num">06</span>
+              <h3 class="keahlian-card__title">Tata Busana</h3>
+              <p class="keahlian-card__desc">Desain fashion, pola pakaian, teknik jahit, tekstil, dan manajemen produksi busana siap pakai hingga haute couture.</p>
+            </div>
+          </article>
+
+          <article class="keahlian-card">
+            <div class="keahlian-card__image">
+              <img src="pembelajaran.jpg" alt="Farmasi" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="keahlian-card__content">
+              <span class="keahlian-card__num">07</span>
+              <h3 class="keahlian-card__title">Farmasi</h3>
+              <p class="keahlian-card__desc">Pengetahuan obat, racikan, pengelolaan apotek, farmakologi, dan etika profesi tenaga farmasi di apotek dan rumah sakit.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="fasilitas" id="fasilitas" aria-labelledby="fasilitas-title">
+      <div class="container">
+        <div class="fasilitas__grid">
+          <div class="fasilitas__content">
+            <header class="section-header">
+              <h2 id="fasilitas-title" class="section__title">Fasilitas Unggulan</h2>
+            </header>
+            <p class="fasilitas__desc">Kami menyediakan fasilitas modern yang mendukung proses pembelajaran optimal dan pengembangan kompetensi siswa sesuai standar industri.</p>
+            <ul class="fasilitas__list">
+              <li><strong>Bengkel Otomotif</strong> — Lengkap dengan lift, diagnostik scanner, mesin las, dan alat tukang standar industri.</li>
+              <li><strong>Laboratorium DKV</strong> — Komputer high-spec, tablet grafis, printer large format, studio fotografi.</li>
+              <li><strong>Dapur Produksi & Pâtisserie</strong> — Peralatan masak komersial, oven deck, mixer spiral, chiller.</li>
+              <li><strong>Studio Busana</strong> — Mesin jahit industri, manekin, cutting table, steam press, CAD fashion.</li>
+              <li><strong>Simulasi Perbankan</strong> — Sistem core banking, ATM simulator, teller counter, ruang rapat.</li>
+              <li><strong>Laboratorium Farmasi</strong> — Alat racikan, spectrophotometer, laminar flow, simulator apotek.</li>
+            </ul>
+          </div>
+          <div class="fasilitas__image">
+            <img src="pembelajaran.jpg" alt="Ruang pembelajaran SMK Bina Karya Nusantara" loading="lazy" onerror="this.style.display='none'">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="prestasi" id="prestasi" aria-labelledby="prestasi-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="prestasi-title" class="section__title">Prestasi & Penghargaan</h2>
+          <p class="section__subtitle">Bukti komitmen kami dalam menciptakan lulusan berprestasi</p>
+        </header>
+        <div class="prestasi__grid">
+          <article class="prestasi-card">
+            <div class="prestasi-card__image">
+              <img src="kelas-dkv.png" alt="Juara Lomba DKV Tingkat Provinsi" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="prestasi-card__content">
+              <span class="prestasi-card__category">Desain</span>
+              <h3 class="prestasi-card__title">Juara 1 Lomba Desain Grafis Provinsi</h3>
+              <p class="prestasi-card__desc">Siswa DKV meraih juara pertama dalam kompetisi desain branding UMKM tingkat provinsi tahun 2024.</p>
+              <time class="prestasi-card__date">Maret 2024</time>
+            </div>
+          </article>
+
+          <article class="prestasi-card">
+            <div class="prestasi-card__image">
+              <img src="bengkel-tkr.png" alt="Juara Lomba Keterampilan Otomotif" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="prestasi-card__content">
+              <span class="prestasi-card__category">Otomotif</span>
+              <h3 class="prestasi-card__title">Juara 2 LKS Otomotif Nasional</h3>
+              <p class="prestasi-card__desc">Tim TKR meraih medali perak di Lomba Keterampilan Siswa (LKS) tingkat nasional kategori perawatan mesin.</p>
+              <time class="prestasi-card__date">September 2023</time>
+            </div>
+          </article>
+
+          <article class="prestasi-card">
+            <div class="prestasi-card__image">
+              <img src="Fashion Design Classroom Workshop.png" alt="Juara Lomba Fashion" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="prestasi-card__content">
+              <span class="prestasi-card__category">Busana</span>
+              <h3 class="prestasi-card__title">Juara Harapan Fashion Show Nasional</h3>
+              <p class="prestasi-card__desc">Karya desain busana siswa dipilih sebagai juara harapan dalam ajang Indonesia Fashion Week muda.</p>
+              <time class="prestasi-card__date">Oktober 2023</time>
+            </div>
+          </article>
+
+          <article class="prestasi-card">
+            <div class="prestasi-card__image">
+              <img src="pembelajaran.jpg" alt="Akreditasi A" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="prestasi-card__content">
+              <span class="prestasi-card__category">Akreditasi</span>
+              <h3 class="prestasi-card__title">Akreditasi A (Unggul)</h3>
+              <p class="prestasi-card__desc">SMK Bina Karya Nusantara memperoleh predikat Akreditasi A dari BAN-S/M dengan skor tertinggi.</p>
+              <time class="prestasi-card__date">2022 - Sekarang</time>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="kegiatan" id="kegiatan" aria-labelledby="kegiatan-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="kegiatan-title" class="section__title">Kegiatan & Galeri</h2>
+          <p class="section__subtitle">Momen-momen pembelajaran dan kegiatan siswa di BKN</p>
+        </header>
+        <div class="kegiatan__grid">
+          <figure class="kegiatan-card">
+            <img src="bengkel-tkr.png" alt="Praktik bengkel TKR" loading="lazy" onerror="this.style.display='none'">
+            <figcaption class="kegiatan-card__caption">Praktik Bengkel TKR</figcaption>
+          </figure>
+          <figure class="kegiatan-card">
+            <img src="dkv.jpg" alt="Kelas DKV" loading="lazy" onerror="this.style.display='none'">
+            <figcaption class="kegiatan-card__caption">Proyek Desain DKV</figcaption>
+          </figure>
+          <figure class="kegiatan-card">
+            <img src="Hands-On Motorcycle Training Workshop.png" alt="Praktik TSM" loading="lazy" onerror="this.style.display='none'">
+            <figcaption class="kegiatan-card__caption">Praktik Teknik Sepeda Motor</figcaption>
+          </figure>
+          <figure class="kegiatan-card">
+            <img src="Collaborative Graphic Design Classroom.png" alt="Praktik Kuliner" loading="lazy" onerror="this.style.display='none'">
+            <figcaption class="kegiatan-card__caption">Praktik Produksi Kuliner</figcaption>
+          </figure>
+          <figure class="kegiatan-card">
+            <img src="kelas-dkv.png" alt="Kelas Perbankan" loading="lazy" onerror="this.style.display='none'">
+            <figcaption class="kegiatan-card__caption">Simulasi Perbankan Syariah</figcaption>
+          </figure>
+          <figure class="kegiatan-card">
+            <img src="Fashion Design Classroom Workshop.png" alt="Praktik Busana" loading="lazy" onerror="this.style.display='none'">
+            <figcaption class="kegiatan-card__caption">Workshop Desain Busana</figcaption>
+          </figure>
+          <figure class="kegiatan-card">
+            <img src="pembelajaran.jpg" alt="Kegiatan pembelajaran" loading="lazy" onerror="this.style.display='none'">
+            <figcaption class="kegiatan-card__caption">Kegiatan Pembelajaran</figcaption>
+          </figure>
+          <figure class="kegiatan-card">
+            <img src="bengkel-tkr.png" alt="Lomba keterampilan" loading="lazy" onerror="this.style.display='none'">
+            <figcaption class="kegiatan-card__caption">Lomba Keterampilan Siswa</figcaption>
+          </figure>
+          <figure class="kegiatan-card">
+            <img src="Hands-On Motorcycle Training Workshop.png" alt="Workshop motor" loading="lazy" onerror="this.style.display='none'">
+            <figcaption class="kegiatan-card__caption">Workshop Teknik Motor</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col footer__brand-col">
+          <div class="footer__logo">
+            <span class="logo-bkn">BKN</span>
+            <span class="logo-text">SMK Bina Karya Nusantara</span>
+          </div>
+          <p class="footer__desc">Membekali siswa dengan pengetahuan dan keterampilan yang dapat diterapkan dalam dunia kerja, pendidikan lanjutan, dan kehidupan sehari-hari.</p>
+        </div>
+
+        <div class="footer__col footer__links-col">
+          <h3 class="footer__col-title">Tautan Cepat</h3>
+          <ul class="footer__nav-list">
+            <li><a href="#beranda" class="footer__nav-link">Beranda</a></li>
+            <li><a href="#profil" class="footer__nav-link">Profil</a></li>
+            <li><a href="#statistik" class="footer__nav-link">Statistik</a></li>
+            <li><a href="#keahlian" class="footer__nav-link">Keahlian</a></li>
+            <li><a href="#fasilitas" class="footer__nav-link">Fasilitas</a></li>
+            <li><a href="#prestasi" class="footer__nav-link">Prestasi</a></li>
+            <li><a href="#kegiatan" class="footer__nav-link">Kegiatan</a></li>
+            <li><a href="#faq" class="footer__nav-link">FAQ</a></li>
+            <li><a href="pendaftaran.html" class="footer__nav-link">Pendaftaran</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col footer__contact-col">
+          <h3 class="footer__col-title">Hubungi Kami</h3>
+          <p class="footer__contact-text">Jl. Merdeka No. 123, Jakarta 10110</p>
+          <p class="footer__contact-text">info@smkbinakarya.sch.id</p>
+          <p class="footer__contact-text">(021) 1234-5678</p>
+          <div class="footer__divider"></div>
+          <p class="footer__contact-text footer__gold-text">Jam Operasional: Senin - Jumat, 07.00 - 16.00 WIB</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 SMK Bina Karya Nusantara</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link">Instagram</a>
+          <span class="footer__social-sep">•</span>
+          <a href="#" class="footer__social-link">YouTube</a>
+          <span class="footer__social-sep">•</span>
+          <a href="#" class="footer__social-link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
